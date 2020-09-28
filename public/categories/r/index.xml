@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on A Hugo website</title>
+    <title>R on A Justin website</title>
     <link>/categories/r/</link>
-    <description>Recent content in R on A Hugo website</description>
+    <description>Recent content in R on A Justin website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Education vs Employment in 2019 CES</title>
-      <link>/2015/07/23/education-vs-employment-in-2019-ces/</link>
+      <title>Education &amp; Employment in 2019 CES</title>
+      <link>/2015/07/23/education-employment-in-2019-ces/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/2015/07/23/education-vs-employment-in-2019-ces/</guid>
-      <description>Abstract  Introduction We use Wickham et al. (2019)
- Data head(decon) ## # A tibble: 6 x 22 ## ces_code citizenship yob gender province_territ… education lr lr_bef ## &amp;lt;chr&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; ## 1 ces2019… Canadian c… 1989 A wom… Quebec Master&amp;#39;s… 2 &amp;lt;NA&amp;gt; ## 2 ces2019… Canadian c… 1998 A wom… Quebec Master&amp;#39;s… 2 &amp;lt;NA&amp;gt; ## 3 ces2019… Canadian c… 2000 A wom… Ontario Some uni… 4 4 ## 4 ces2019… Canadian c… 1998 A man Ontario Some uni… 7 7 ## 5 ces2019… Canadian c… 2000 A wom… Ontario Complete… 4 4 ## 6 ces2019… Canadian c… 1999 A wom… Ontario Some uni… 4 4 ## # … with 14 more variables: lr_aft &amp;lt;chr&amp;gt;, religion &amp;lt;fct&amp;gt;, ## # sexuality_selected &amp;lt;fct&amp;gt;, sexuality_text &amp;lt;chr&amp;gt;, language_eng &amp;lt;fct&amp;gt;, ## # language_fr &amp;lt;fct&amp;gt;, language_abgl &amp;lt;fct&amp;gt;, employment &amp;lt;fct&amp;gt;, income &amp;lt;dbl&amp;gt;, ## # income_cat &amp;lt;fct&amp;gt;, marital &amp;lt;fct&amp;gt;, econ_retro &amp;lt;fct&amp;gt;, econ_fed &amp;lt;fct&amp;gt;, ## # econ_self &amp;lt;fct&amp;gt;  Including Plots decon %&amp;gt;% ggplot(aes(x= education)) + geom_bar()+ theme(axis.</description>
+      <guid>/2015/07/23/education-employment-in-2019-ces/</guid>
+      <description>Abstract Findings from the 2019 Canadian Election Study (CES) in Online Survey responses show that a majority of reported Canadian citizens are working full-time and have an educational background of either high school, community college or bachelor’s degree. This is evident of a correlation between education level and employment status.
+ Introduction The following page contains an interesting finding in the 2019 CES data of Online Surveys. More specifically, responses in questions regarding educational background and employment status of Canadian citizens showed promising remarks.</description>
     </item>
     
   </channel>

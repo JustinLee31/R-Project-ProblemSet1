@@ -1,12 +1,78 @@
----
-title: "Education & Employment in 2019 CES"
-author: "Justin Lee"
-date: 2015-07-23T21:13:14-05:00
-bibliography: "references.bib"
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
 
+
+<title>Education &amp; Employment in 2019 CES - A Justin website</title>
+<meta property="og:title" content="Education &amp; Employment in 2019 CES - A Justin website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/JustinLee31/R-Project-ProblemSet1">GitHub</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=Gs069dndIYk&amp;ab_channel=EarthWindandFireVEVO">Youtube</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Education &amp; Employment in 2019 CES</h1>
+
+    
+    <span class="article-date">2015-07-23</span>
+    
+
+    <div class="article-content">
+      
 
 
 <div id="abstract" class="section level1">
@@ -144,7 +210,7 @@ tags: ["R Markdown", "plot", "regression"]
   theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
   ggtitle(&quot;Education of Citizens in 2019 CES&quot;)+
   coord_flip()</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 The above ggplot shows a count of various responses to the education question in the 2019 Canadian Election study. We see a majority response among citizens having completed secondary/high school, Community college or Bachelor’s Degree.</p>
 <pre class="r"><code>decon %&gt;%
   ggplot(aes(x= employment)) +
@@ -152,7 +218,7 @@ The above ggplot shows a count of various responses to the education question in
   theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
   ggtitle(&quot;Employment Status in 2019 CES&quot;)+
   coord_flip()</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 The above ggplot shows an majority number of Canadian Citizens are working for pay full-time, while many individuals are retired.</p>
 </div>
 <div id="weaknesses-and-next-steps" class="section level1">
@@ -169,3 +235,47 @@ The above ggplot shows an majority number of Canadian Citizens are working for p
 Little Easier.. R package version 0.1.0</li>
 </ul>
 </div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

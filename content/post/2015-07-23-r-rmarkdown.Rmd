@@ -1,5 +1,5 @@
 ---
-title: "Education vs Employment in 2019 CES"
+title: "Education & Employment in 2019 CES"
 author: "Justin Lee"
 date: 2015-07-23T21:13:14-05:00
 bibliography: "references.bib"
@@ -8,10 +8,15 @@ tags: ["R Markdown", "plot", "regression"]
 ---
 
 # Abstract
+Findings from the 2019 Canadian Election Study (CES) in Online Survey responses show that a majority of reported Canadian citizens are working full-time and have an educational background of either high school, community college or bachelor's degree. This is evident of a correlation between education level and employment status.
+
 
 # Introduction
+The following page contains an interesting finding in the 2019 CES data of Online Surveys. More specifically, responses in questions regarding  educational background and employment status of Canadian citizens showed promising remarks.
 
-We use @citetidyverse
+Through the Online Surveys of the 2019 CES results, it was found that approximately 9192 individuals had a bachelor's degree, 7702 had completed community college and 5865 had at least completed high school. In terms of employment status, approximately 16124 individuals were working full-time and 9008 were retired. 
+
+From these numbers, we see evidently that a vast majority of the citizens who responded to the 2019 CES Online Surveys had completed community college or had a bachelor's degree. In addition, those majority of citizens were also in a employment status of working full-time or retired. This is an important finding to note that employment status is generally related to education level.
 
 ```{r, include= FALSE}
 #install cesR datasets and relevant packages
@@ -26,11 +31,15 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 # Data
-```{r}
+```{r, include=FALSE}
 head(decon)
 ```
+A overall summary of R data that will mainly be used in this page will be the 2019 Canadian Election study for the Online Survey. 
+```{r}
+summary(decon)
+```
 
-# Including Plots
+# Relevant Plots
 
 ```{r}
 decon %>%
@@ -47,11 +56,18 @@ decon %>%
   ggplot(aes(x= employment)) +
   geom_bar()+
   theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
-  ggtitle("Education of Citizens in 2019 CES")+
+  ggtitle("Employment Status in 2019 CES")+
   coord_flip()
 ```
+The above ggplot shows an majority number of Canadian Citizens are working for pay full-time, while many individuals are retired. 
 
 # Weaknesses and Next Steps
+Due to individual limited  experience with github and R studio, some items on this website page does not look as visually appealing as desired. In this case, the variables that were graphed on the ggplots contained longer than usual names. As a result, both ggplots were graphed and rotated using "coordflip()", in order to view all wordings in the survey responses for education and employment questions. 
+
+In addition, a regression test between variables employment and education would have been preferred, in order to show statistical computation of a correlation coefficient that would evidently indicate a strong correlation between employment status and education level. 
+
+Moving forward, next steps in improving this analysis of this data set would be to improve size scaling of ggplots and performing regression testing among the chosen observations in the data in order to display superior statistical findings. 
+
 
 # References
 

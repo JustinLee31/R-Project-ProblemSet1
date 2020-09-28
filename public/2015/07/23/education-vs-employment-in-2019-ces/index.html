@@ -108,7 +108,16 @@
   theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
   ggtitle(&quot;Education of Citizens in 2019 CES&quot;)+
   coord_flip()</code></pre>
-<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+The above ggplot shows a count of various responses to the education question in the 2019 Canadian Election study. We see a majority response among citizens having completed secondary/high school, Community college or Bachelor’s Degree.</p>
+<pre class="r"><code>decon %&gt;%
+  ggplot(aes(x= employment)) +
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
+  ggtitle(&quot;Employment Status in 2019 CES&quot;)+
+  coord_flip()</code></pre>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+The above ggplot shows an majority number of Canadian Citizens are working for pay full-time, while many individuals are retired.</p>
 </div>
 <div id="weaknesses-and-next-steps" class="section level1">
 <h1>Weaknesses and Next Steps</h1>
