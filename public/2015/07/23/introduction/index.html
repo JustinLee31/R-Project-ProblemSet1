@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<title>Introduction - A Hugo website</title>
+<meta property="og:title" content="Introduction - A Hugo website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/JustinLee31/R-Project-ProblemSet1">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Introduction</h1>
+
+    
+    <span class="article-date">2015-07-23</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>We use <span class="citation">Wickham et al. (2019)</span></p>
+</div>
+<div id="data" class="section level1">
+<h1>Data</h1>
+<pre class="r"><code>head(decon)</code></pre>
+<pre><code>## # A tibble: 6 x 22
+##   ces_code citizenship yob   gender province_territ… education lr    lr_bef
+##   &lt;chr&gt;    &lt;fct&gt;       &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;            &lt;fct&gt;     &lt;chr&gt; &lt;chr&gt; 
+## 1 ces2019… Canadian c… 1989  A wom… Quebec           Master&#39;s… 2     &lt;NA&gt;  
+## 2 ces2019… Canadian c… 1998  A wom… Quebec           Master&#39;s… 2     &lt;NA&gt;  
+## 3 ces2019… Canadian c… 2000  A wom… Ontario          Some uni… 4     4     
+## 4 ces2019… Canadian c… 1998  A man  Ontario          Some uni… 7     7     
+## 5 ces2019… Canadian c… 2000  A wom… Ontario          Complete… 4     4     
+## 6 ces2019… Canadian c… 1999  A wom… Ontario          Some uni… 4     4     
+## # … with 14 more variables: lr_aft &lt;chr&gt;, religion &lt;fct&gt;,
+## #   sexuality_selected &lt;fct&gt;, sexuality_text &lt;chr&gt;, language_eng &lt;fct&gt;,
+## #   language_fr &lt;fct&gt;, language_abgl &lt;fct&gt;, employment &lt;fct&gt;, income &lt;dbl&gt;,
+## #   income_cat &lt;fct&gt;, marital &lt;fct&gt;, econ_retro &lt;fct&gt;, econ_fed &lt;fct&gt;,
+## #   econ_self &lt;fct&gt;</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<pre class="r"><code>decon %&gt;%
+  ggplot(aes(x= education)) +
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 90, vjust=0.5, hjust=1))+
+  ggtitle(&quot;Education of Citizens in 2019 CES&quot;)+
+  coord_flip()</code></pre>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="weaknesses-and-next-steps" class="section level1">
+<h1>Weaknesses and Next Steps</h1>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ul>
+<li>Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, ‘2019 Canadian Election Study - Online Survey’, <a href="https://doi.org/10.7910/DVN/DUS88V" class="uri">https://doi.org/10.7910/DVN/DUS88V</a>, Harvard Dataverse, V1</li>
+<li>Paul A.Hodgetts and Rohan Alexander (2020). cesR: Access the CES Datasets a
+Little Easier.. R package version 0.1.0</li>
+</ul>
+<div id="refs" class="references">
+<div id="ref-citetidyverse">
+<p>Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the tidyverse.” <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
